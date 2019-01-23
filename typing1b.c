@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     
     for( i = 0; i < len; i++)
     {
-        printf("%s \r", &str[i]);           // 显示str[i]以后的字符并把光标返回到开头
+        printf("%s \r", &str[i]);           // 显示str[i]以后的字符（包括i）并把光标返回到开头
         fflush(stdout);
         while(getch() != str[i])
             ;

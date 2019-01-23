@@ -13,8 +13,8 @@ int main(int argc, char const *argv[])
     int len = strlen(str);                  // 字符串的字符数量
     clock_t start, end;                     // 开始时钟数和结束时钟数
 
-    init_getputch();
-
+    init_getputch();                        // 表示初始化getput.h的意思吧，去掉也没有什么编译问题，我试过了。
+                                            // 下面的term_getput()也一样。毕竟头文件中的定义是空的函数。
     printf("请照着输入。\n");
     printf("%s\n", str);                    // 显示要输入的字符串
     fflush(stdout);
